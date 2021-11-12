@@ -11,7 +11,8 @@
     "naive-ui": "^2.20.2",
     "sass": "^1.43.4",
     "vue": "^3.2.16",
-    "vue-router": "4"
+    "vue-router": "4",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",

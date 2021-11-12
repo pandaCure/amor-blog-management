@@ -22,6 +22,7 @@
 import { defineComponent, ref } from "vue";
 import { NForm, NFormItem, NInput, NButton, NButtonGroup } from "naive-ui";
 import requestAjax from "../../utils/request";
+import router from "../../routes";
 
 export default defineComponent({
   setup() {
@@ -63,6 +64,7 @@ export default defineComponent({
           .then(({data}) => {
             const {token} = data
             window.localStorage.setItem('token', token);
+            router.push('/')
           })
           .catch((error) => {
             console.log(error);
